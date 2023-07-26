@@ -38,8 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'LittleLemonAPI',
+    'rest_framework.filters',
+    'django_filters',
+    'rest_framework.authtoken',
     'djoser',
+    'LittleLemonAPI',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +127,33 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': [
+#        'django.filter.rest_framework.DjangoFilterBackend',
+        'rest_framework.filters.OrderingFilter',
+        'rest_framework.filters.SearchFilter',
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ],
+#    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+#    'PAGE_SIZE': 2,
+## Throttling
+#    'DEFAULT_THROTTLE_CLASSES': [
+#        'rest_framework.throttling.AnonRateThrottle',
+#        'rest_framework.throttling.UserRateThrottle',
+#    ],
+## Throttle rates defined here for class-based views
+#    'DEFAULT_THROTTLE_RATES': {
+#        'anon': '20/minute',
+#        'user': '100/minute'
+#    },
+}
+
+DJOSER = {
+    "USER_ID_FIELD": "username"
+}
+
+INTERNAL_IPS = [ '127.0.0.1', ]
