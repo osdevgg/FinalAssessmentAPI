@@ -1,0 +1,26 @@
+Usernames, Passwords and Tokens for LittleLemon FinalAssessment project
+
+Username and Password are separated by the caracter ‘:’ in the text below
+
+admin:fremont1      f4759695c792ac6f329ded5edd53471e241e8041
+
+Managers
+mario:1fremont      d4ecdb4bb0f6150fda2edcd0e111a966ca5780bc
+melissa:1fremont    b980fcab600c29ce2c64108a81792724eadba13b
+mike:1fremont       34981aebefc9c2a837426909a6872e1696fbb8da
+
+Delivery Crew
+daisy:1fremont      7301a383ca18396142aca010ac3a312645cfec24
+dan:1fremont        21e6af87835408268f8271624da6d0d4fceb3ad9
+david:1fremont      4892e574aa69d89d784ee110e9dfc06dcc7a5474
+
+Customers
+alice:1fremont      fc57232df01fdc76e4dabd7114bcaedb3444c66b
+audrey:1fremont     7edaefe26a535040353a283f99d4b94249a501a0
+charles:1fremont    a3d051748a8972395338d5f63522291bd1b48a53
+john:1fremont       c7052ef78fecbc11d62bee022f6eb373efab1778
+madison:1fremont    9f0a24221e75d28d10cd67232116a2bdaa57aa14
+scott:1fremont      b0955976b8d95f8c6e054acc519f5b2427fd3462
+sean:1fremont       6d68f15c9f83ab3b9237b0b4b08af85502cadf8d
+donald:1fremont     6fcb5f3e48dffa28cc61226c694939e635e9a27a
+caio:1fremont       eff2d1790ca14638afbe91bdcdc034fe9852fd1d
